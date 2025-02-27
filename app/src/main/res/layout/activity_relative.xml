@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relatives"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="16dp" />
+
+    <!-- Table Layout to display the data -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:padding="16dp">
+    </TableLayout>
+
+    <!-- Button to add new data -->
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/baseline_add_24"
+        android:text="Add relative" />
+
+</LinearLayout>

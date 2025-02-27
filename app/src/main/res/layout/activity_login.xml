@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Women Safety App"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/text_color_main"
+        android:textSize="30dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:textColor="@color/text_color_secondary"
+        android:background="@drawable/inputfielddesign"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:id="@+id/mobileno"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="@color/text_color_secondary"
+        android:background="@drawable/inputfielddesign"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendotpbutton"
+        android:paddingRight="25dp"
+        android:text="Send Otp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/green"
+        android:textAlignment="textEnd"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Otp"
+        android:id="@+id/otp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="@color/text_color_secondary"
+        android:background="@drawable/inputfielddesign"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/term"
+        android:text="I accept all the term and conditions "
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color_main"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/green"
+        android:id="@+id/signup"
+        android:text="Sign up"
+        android:textColor="@color/text_color_main"
+        android:elevation="10dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/baseline_login_24"
+        android:shadowColor="@color/text_color_secondary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/backup"
+        android:layout_margin="20dp"
+        android:textSize="14dp"
+        android:textColor="@color/text_color_secondary"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Note:App will ask for some permission which will be required for proper funtioning of the app. Please give the permission for proper functioning of the app."/>
+
+
+
+</LinearLayout>
